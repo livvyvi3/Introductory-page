@@ -1,0 +1,88 @@
+:root{
+    --prmry-clr-BG: hwb(45 87% 11%);
+    --prmry-clr-heading: hsl(342, 65%, 28%);
+    --clr-inline-prg: hsl(334, 32%, 50%);
+}
+body{
+    background-color: var(--prmry-clr-BG);
+    align-items: centers;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.main-container{
+    align-items: center;
+    margin: 5rem 20rem auto 7rem;
+    position: relative;
+    cursor: pointer;
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;   
+}
+
+h1{
+    color: var(--prmry-clr-heading);
+    text-align: left;
+    font-size: 40px;
+    
+}
+a{
+    color: var(--clr-inline-prg);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--prmry-clr-heading);
+}
+p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+.column {
+    float: right;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.icon-bar{
+    align-items: left;
+    margin-top: 0.5rem;
+}
+.git-img,
+.linkedIn-img{
+    max-width: 40px;
+    max-height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.linkedIn-img:hover{
+    background-color: var(--clr-inline-prg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20% 20%;
+    opacity: 0.5;
+    transition: background-color ease-in-out 0.3s;
+}
+.git-img:hover{
+    background-color: var(--clr-inline-prg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20% 20%;
+    opacity: 0.5;
+    transition: background-color ease-in-out 0.3s;;
+}
+
